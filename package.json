@@ -1,0 +1,20 @@
+{
+  "name": "backend-test-case",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.23.0",
+    "swagger-ui-express": "^4.5.0",
+    "uuid": "^9.0.0"
+  }
+}

@@ -1,0 +1,471 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0",
+      "title": "aigen",
+      "contact": {}
+    },
+    "host": "localhost:5050",
+    "basePath": "/",
+    "securityDefinitions": {},
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/transaction/pinjam-buku": {
+        "post": {
+          "summary": "pinjam-buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "pinjam-buku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/pinjam-buku-request"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/transaction/1/HOB-83": {
+        "delete": {
+          "summary": "mengembalikan-buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "mengembalikan-buku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/mengembalikan-buku-request"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/book": {
+        "post": {
+          "summary": "create buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "createbuku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/createbukurequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "get": {
+          "summary": "all data buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "alldatabuku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/book/MH-37": {
+        "get": {
+          "summary": "find data buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "finddatabuku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "delete": {
+          "summary": "delete data buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "deletedatabuku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "put": {
+          "summary": "update data buku",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "updatedatabuku",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/updatedatabukurequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/member": {
+        "get": {
+          "summary": "All data member",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Alldatamember",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "post": {
+          "summary": "Create data member",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Createdatamember",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/CreatedatamemberRequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/": {
+        "get": {
+          "summary": "Find data member",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Finddatamember",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/member/M004": {
+        "put": {
+          "summary": "Update data member",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Updatedatamember",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "name": "Body",
+              "in": "body",
+              "required": true,
+              "description": "",
+              "schema": {
+                "$ref": "#/definitions/UpdatedatamemberRequest"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        },
+        "delete": {
+          "summary": "Delete data member",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Deletedatamember",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      },
+      "/member/send-penalty/M003": {
+        "put": {
+          "summary": "Send penalty",
+          "tags": [
+            "Misc"
+          ],
+          "operationId": "Sendpenalty",
+          "deprecated": false,
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "",
+              "headers": {}
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "pinjam-buku-request": {
+        "title": "pinjam-buku-request",
+        "example": {
+          "code_member": "M001",
+          "code_buku": "HOB-83",
+          "tanggal_pinjam": "2022-09-01",
+          "tanggal_kembali": "2022-09-08"
+        },
+        "type": "object",
+        "properties": {
+          "code_member": {
+            "type": "string"
+          },
+          "code_buku": {
+            "type": "string"
+          },
+          "tanggal_pinjam": {
+            "type": "string"
+          },
+          "tanggal_kembali": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code_member",
+          "code_buku",
+          "tanggal_pinjam",
+          "tanggal_kembali"
+        ]
+      },
+      "mengembalikan-buku-request": {
+        "title": "mengembalikan-buku-request",
+        "example": {
+          "code_buku": "HOB-83"
+        },
+        "type": "object",
+        "properties": {
+          "code_buku": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code_buku"
+        ]
+      },
+      "createbukurequest": {
+        "title": "createbukurequest",
+        "example": {
+          "code": "MH-37",
+          "title": "Daily notes",
+          "author": "Sandi agung",
+          "stock": 1
+        },
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "code",
+          "title",
+          "author",
+          "stock"
+        ]
+      },
+      "updatedatabukurequest": {
+        "title": "updatedatabukurequest",
+        "example": {
+          "title": "Daily notes ayu"
+        },
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title"
+        ]
+      },
+      "CreatedatamemberRequest": {
+        "title": "CreatedatamemberRequest",
+        "example": {
+          "code": "M004",
+          "name": "Udin",
+          "status": true
+        },
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "code",
+          "name",
+          "status"
+        ]
+      },
+      "UpdatedatamemberRequest": {
+        "title": "UpdatedatamemberRequest",
+        "example": {
+          "name": "sapri"
+        },
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    "tags": [
+      {
+        "name": "Misc",
+        "description": ""
+      }
+    ]
+  }
